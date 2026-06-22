@@ -7,12 +7,15 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form string="Enterprise BI Dashboard">
-                <board style="2-1">
+                <board style="1-2">
                     <column>
-                        <action name="%(action_bi_sales_analysis)d" string="Sales Overview" />
+                        <action name="%(action_bi_sales_analysis)d" string="Sales Trend" />
+                        <action name="%(action_bi_account_analysis)d" string="Invoicing Trend" />
                     </column>
                     <column>
-                        <action name="%(action_bi_purchase_analysis)d" string="Purchase Overview" />
+                        <action name="%(action_bi_purchase_analysis)d" string="Purchase Trend" />
+                        <action name="%(action_bi_crm_analysis)d" string="CRM Opportunities" />
+                        <action name="%(action_bi_inventory_analysis)d" string="Inventory Moves" />
                     </column>
                 </board>
             </form>

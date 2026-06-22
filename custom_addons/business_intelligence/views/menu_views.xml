@@ -30,4 +30,22 @@
               parent="menu_bi_analytics"
               action="action_bi_purchase_analysis"
               sequence="2"/>
+              
+    <menuitem id="menu_bi_crm"
+              name="CRM Analytics"
+              parent="menu_bi_analytics"
+              action="action_bi_crm_analysis"
+              sequence="3"/>
+
+    <menuitem id="menu_bi_account"
+              name="Finance Analytics"
+              parent="menu_bi_analytics"
+              action="action_bi_account_analysis"
+              sequence="4"/>
+
+    <menuitem id="menu_bi_inventory"
+              name="Inventory Analytics"
+              parent="menu_bi_analytics"
+              action="action_bi_inventory_analysis"
+              sequence="5"/>
 </odoo>

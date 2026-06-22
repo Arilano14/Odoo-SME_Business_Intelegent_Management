@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Action for Sales Analysis -->
+    <!-- Sales Analysis -->
     <record id="action_bi_sales_analysis" model="ir.actions.act_window">
         <field name="name">Sales Analytics</field>
         <field name="res_model">sale.report</field>
         <field name="view_mode">graph,pivot</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_empty_folder">
-                No sales data to analyze yet.
-            </p>
-        </field>
     </record>
 
-    <!-- Action for Purchase Analysis -->
+    <!-- Purchase Analysis -->
     <record id="action_bi_purchase_analysis" model="ir.actions.act_window">
         <field name="name">Purchase Analytics</field>
         <field name="res_model">purchase.report</field>
         <field name="view_mode">graph,pivot</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_empty_folder">
-                No purchase data to analyze yet.
-            </p>
-        </field>
+    </record>
+
+    <!-- CRM Analysis -->
+    <record id="action_bi_crm_analysis" model="ir.actions.act_window">
+        <field name="name">CRM Analytics</field>
+        <field name="res_model">crm.lead</field>
+        <field name="view_mode">graph,pivot,tree</field>
+    </record>
+
+    <!-- Finance/Account Analysis -->
+    <record id="action_bi_account_analysis" model="ir.actions.act_window">
+        <field name="name">Finance Analytics</field>
+        <field name="res_model">account.invoice.report</field>
+        <field name="view_mode">graph,pivot</field>
+    </record>
+
+    <!-- Inventory Analysis -->
+    <record id="action_bi_inventory_analysis" model="ir.actions.act_window">
+        <field name="name">Inventory Analytics</field>
+        <field name="res_model">stock.move.line</field>
+        <field name="view_mode">graph,pivot,tree</field>
     </record>
 </odoo>
